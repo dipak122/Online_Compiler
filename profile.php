@@ -130,7 +130,7 @@ $row=mysqli_fetch_array($send);
   
    
    <ul class=\"nav nav-pills nav-stacked\">
-    <li role=\"presentation\" class=\"active\"><a href=\"setcontest.php\">Create Lab </a></li>
+    <li role=\"presentation\" class=\"active\"><a href=\"createcontest.php\">Create Lab </a></li>
     <li role=\"presentation\"><a href=\"setcontestproblem.php\">Create Lab Question</a></li>
     <li role=\"presentation\"><a href=\"setproblem.php\">Create Practice Question</a></li>
     <li role=\"presentation\"><a href=\"allsubmission.php?name=$username\">My Submission</a></li>

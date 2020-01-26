@@ -103,18 +103,48 @@ echo "<label for=\"contestname\">Contest Name: </label>
 // }
 ?>
 
-
-<label for="starttime">Start Time</label>
+<!-- <label for="starttime">Start Time</label>
 <input type="date" name="starttime" class="form-control"  required>
 <label for="starttime1">at</label>
-<input type="time" name="starttime1" class="form-control"  required>
+<input type="time" name="starttime1" class="form-control"  required> -->
+
+<label for="starttime">Start Time</label>
+ <input type="datetime-local" name="starttime" requried><br><br>
+
+ <label for="endtime">End Time</label>
+ <input type="datetime-local" name="endtime" requried><br><br>
 
 
 
-<label for="endtime">End Time</label>
+<!-- <label for="endtime">End Time</label>
 <input type="date" name="endtime" class="form-control"  required>
 <label for="endtime1">at</label>
-<input type="time" name="endtime1" class="form-control"  required>
+<input type="time" name="endtime1" class="form-control"  required> -->
+
+<!-- 
+ <label for="ta">Enter Contest Start Time</label>
+<!--<input type="text" name="ct" class="form-control"><br><br>-->
+
+<!-- 
+ <div class="input-group date form_datetime col-md-5" data-date="2017-06-15T05:25:07Z" data-date-format=" yyyy-mm-dd hh:ii " data-link-field="dtp_input1">
+                    <input type='text' name="ct" class="form-control" readonly class="form_datetime" />
+
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+          <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                </div><br><br>
+
+<label for="ta">Enter Contest End Time</label>
+<!--<input type="text" name="ce" class="form-control"><br><br>-->
+
+<!-- 
+ <div class="input-group date form_datetime1 col-md-5" data-date="2017-06-15T05:25:07Z" data-date-format=" yyyy-mm-dd hh:ii " data-link-field="dtp_input1">
+                    <input type='text' name="ce" class="form-control" readonly class="form_datetime1" />
+
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+          <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                </div><br><br>
+<br><br>
+ --> 
 
 
 

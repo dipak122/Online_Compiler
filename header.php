@@ -39,7 +39,10 @@ if(isset($_SESSION['un'])){
       </li>";
      }
      ?>
-      
+      <?php
+      echo"<li class=\"nav-item active\"><a class=\"nav-link\" href=\"listcontest.php\">Contest <span class=\"sr-only\">(current)</span></a>
+      </li>";
+      ?>
         
       
       <li class="nav-item dropdown">

@@ -16,65 +16,85 @@ if(isset($_SESSION['un'])){
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="icon" type="image/png" href="img/ruet.png"> -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+
+<style>
+
+ul{
+    list-style: none;
+    direction:rtl;
+    text-align: right;
+}
+li{
+    display:inline-block;
+    /* border:1px solid black; */
+    padding:0 10px 0 10px;
+    /* margin:0 10px 0 10px; */
+}
+</style>
+
 
     <title>Hello, world!</title>
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  <div class="main" >
+
+  <div class="row">
+  <div class="col-sm-12">
+  <nav class="navbar navbar-inverse navbar-fixed-top nbar">
+    <div class="navbar-header" style="width:40% ; height:10%">
+      <a class="navbar-brand lspace" href="home.php">Online_compiler</a>
+    </div>
+    <ul class="nav navbar-nav" style="inline-height:80px,  width">
+      <!-- <li class="space"><a href="compiler.php"><i class="fa fa-code ispace"></i>Compiler</a></li>
+      <li class="space"><a href="archive.php"><i class="fa fa-archive ispace"></i>Problem Archive</a></li>
+      <li class="space"><a href="contest.php"><i class="fa fa-cogs ispace"></i>Contests</a></li>
+     -->
 
     <?php
      if($u==1){
-       echo "<li class=\"nav-item active\"><a class=\"nav-link\" href=\"index.php\">Home <span class=\"sr-only\">(current)</span></a>
+       echo "<li class=\"space\"><a class=\"fa fa-code ispace\" href=\"index.php\">Home</a>
        </li>";
      }
      else{
-      echo "<li class=\"nav-item active\"><a class=\"nav-link\" href=\"index.php\">Home <span class=\"sr-only\">(current)</span></a>
+      echo "<li class=\"space\"><a class=\"fa fa-code ispace\" href=\"index.php\">Home </a>
       </li>";
      }
      ?>
       <?php
-      echo"<li class=\"nav-item active\"><a class=\"nav-link\" href=\"listcontest.php\">Contest <span class=\"sr-only\">(current)</span></a>
+      echo"<li class=\"space\"><a class=\"fa fa-code ispace\" href=\"listcontest.php\">Contest </a>
       </li>";
       ?>
-        
-      
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-
       
         <?php
         if($u==1){
-          echo "<li class=\"nav-item active\"><a class=\"nav-link\" href=\"profile.php?user=$username\">$username</a></li>";
-         echo"<li class=\"nav-item active\"><a class=\"nav-link\" href=\"Logout.php\">Log Out</a></li>";
+          echo "<li class=\"space\"><a class=\"fa fa-code ispace\" href=\"profile.php?user=$username\">$username</a></li>";
+         echo"<li class=\"space\"><a class=\"fa fa-code ispace\" href=\"Logout.php\">Log Out</a></li>";
         }        
          else{
-          echo"<li class=\"nav-item active\"><a class=\"nav-link\" href=\"login.php\">Login</a>\"</li>";
-      echo"<li class=\"nav-item active\"><a class=\"nav-link\" href=\"sign.php\">Sign up</a>\"</li>";
+          echo"<li class=\"space\"><a class=\"fa fa-code ispace\" href=\"login.php\">Login</a>\"</li>";
+      echo"<li class=\"space\"><a class=\"fa fa-code ispace\" href=\"sign.php\">Sign up</a>\"</li>";
          }
       ?>
     
     </ul>
+  </nav>
   </div>
-</nav>
+  </div>
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

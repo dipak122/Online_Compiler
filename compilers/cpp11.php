@@ -1,6 +1,6 @@
 <?php
 
-    putenv("PATH=C:\TDM-GCC-64\bin");
+    putenv("PATH=E:\TDM-GCC-64\bin");
 	$CC="g++ -std=c++11";
 	$out="a.exe";
 	$code=$_POST["code"];

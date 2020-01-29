@@ -61,6 +61,7 @@ if(isset($_SESSION['un']))
     <title>Hello, world!</title>
   </head>
   <body>
+    <h1>hello add contest</h1>
     <?php
 //     require_once('header.php');
 //     require_once('contest.php');

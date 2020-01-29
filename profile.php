@@ -130,7 +130,7 @@ $row=mysqli_fetch_array($send);
   
    
    <ul class=\"nav nav-pills nav-stacked\">
-    <li role=\"presentation\" class=\"active\"><a href=\"createcontest.php\">Create Lab </a></li>
+    <li role=\"presentation\" class=\"active\"><a href=\"createcontest.php\">Create Contest </a></li>
     <li role=\"presentation\"><a href=\"setcontestproblem.php\">Create Lab Question</a></li>
     <li role=\"presentation\"><a href=\"setproblem.php\">Create Practice Question</a></li>
     <li role=\"presentation\"><a href=\"allsubmission.php?name=$username\">My Submission</a></li>
@@ -148,67 +148,13 @@ $row=mysqli_fetch_array($send);
   
    
    <ul class=\"nav nav-pills nav-stacked\">
-    <li role=\"presentation\" class=\"active\"><a href=\"setcontest.php\">Create Lab </a></li>
+    <li role=\"presentation\" class=\"active\"><a href=\"setcontest.php\">Create Contest </a></li>
     <li role=\"presentation\"><a href=\"setcontestproblem.php\">Create Lab Question</a></li>
     <li role=\"presentation\"><a href=\"setproblem.php\">Create Practice Question</a></li>
     <li role=\"presentation\"><a href=\"allsubmission.php?name=$username\">My Submission</a></li>
     </ul></div>";
      }
    ?>
-
-<!--<div class="ym">
- <div class="pc">Dashboard</div>
-  
-   
-   <ul class="nav nav-pills nav-stacked">
-    <li role="presentation" class="active"><a href="setcontest.php">Create Contest</a></li>
-    <li role="presentation"><a href="setcontestproblem.php">Create Contest Problem</a></li>
-    <li role="presentation"><a href="setproblem.php">Create Archive Problem</a></li>
-    <li role="presentation"><a href="allsubmission.php?name=<?php ; ?>">My Submission</a></li>
-  </ul>
-  
- <ul class="nav nav-pills nav-stacked ">
-    <li class="active"><a data-toggle="pill" href="#home">Profile</a></li>
-    <li><a data-toggle="pill" href="#menu1">Submission</a></li>
-    <li><a data-toggle="pill" href="#menu2">Statistics</a></li>
-  
-  </ul>
-
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <?php
-
-       //echo"<br><br><br>";
-       //echo "Name: $data<br>";
-
-      ?>
-      
-    </div>
-    <div id="menu1" class="tab-pane fade">
-     <?php
-        //echo"<br><br><br>";
-       //echo "Name: $user<br>";
-       ?>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-       <?php
-        //echo"<br><br><br>";
-       //echo "Name: $user<br>";
-       ?>
-    </div>
-    
-  </div>
-</div>-->
-
-
-
-
-
-
-</div>
-
-<div class="col-sm-4">
-
 </div>
 </div>
 <br><br><br>

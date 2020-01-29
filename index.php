@@ -73,7 +73,7 @@ if(isset($_SESSION['un']))
 <div class="row cspace2 slideanim">
 <div class="col-sm-7"> 
 
-<div id="services" class="container-fluid text-center">
+<div id="services" class="container-fluid text-center" >
   <h2>SERVICES</h2>
   <h4>What we offer</h4>
   <br>
@@ -94,15 +94,15 @@ if(isset($_SESSION['un']))
     <br><br><br><br>
   <div class="row slideanim">
     <div class="col-sm-6">
-       <a href="contest.php"><span class="fa fa-cogs logo-small"></span>
-      <h4>Lab Tests</h4>
+       <a href="listcontest.php"><span class="fa fa-cogs logo-small"></span>
+      <h4>Contest</h4>
       <p>Our Virtual Lab Judges Codes And Gives Perfect Result</p>
       </a>
     </div>
     <div class="col-sm-6">
        <a href="profile.php?user=<?php echo"$username" ?>"><span class="fa fa-check-square logo-small"></span>
-      <h4>Lab Manager</h4>
-      <p>Teachers Can Manages Their Lab Any Time</p>
+      <h4>Profile</h4>
+      <p>User can manage profile </p>
       </a>
     </div>
   </div>

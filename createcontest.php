@@ -155,8 +155,7 @@ echo "<label for=\"contestname\">Contest Name: </label>
 <input type="text" name="Organizationname" class="form-control" placeholder="Enter Organization name" required><br>
 
 
-<button type="submit" class="btn btn-success">Sign Up</button><br><br><br><br><br><br>
-	
+<button type="submit" class="btn btn-success">Create</button><br><br><br><br><br><br>
 
 </form>
 </div>

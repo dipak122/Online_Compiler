@@ -38,6 +38,43 @@ if(isset($_SESSION['un']))
 
 
 }
+#rcorners2 {
+    border-radius: 25px;
+    border: 2px solid grey;
+    padding: 20px; 
+    width: 700px;
+    height: 50px; 
+    b
+  }
+
+  ul #b {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+  li #b {
+    float: left;
+    padding: 14px 16px;
+  }
+
+  
+
+  .button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-left: 100px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+    
+    cursor: pointer;
+  }
+  .button4 {border-radius: 12px;}
 
           </style>
     <!-- Required meta tags -->
@@ -61,31 +98,54 @@ if(isset($_SESSION['un']))
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Contest has been Created</h1>
+    
+<script src="jquery-3.3.1.min.js"></script>
+<script src="TimeCircles/TimeCircles.js"></script>
+<link rel="stylesheet" type="text/css" href="TimeCircles/TimeCircles.css">
+
+
+<script>
+    $(function () {
+        $("#count-down").TimeCircles();
+    });
+</script>
     <?php
-//     require_once('header.php');
-//     require_once('contest.php');
-
-//     $sql="select * from contest";
-//     $result=$connection1->query($sql);
-//    // echo "in php";
-//     while($row=mysqli_fetch_array($result)){
-//         echo"<br><form action=\"challenges.php\" method=\"POST\"><div class=\"container\" style=\"padding:10px ; width:80%; height:20% ; border:5px solid black\">";
-//         echo"<label style=\"padding-right:30em\" >$row[contestname]</label>";
-//         echo "<input type=\"hidden\" value=$row[contestname] name=\"contestname\">";
-//         echo"<label style=\"padding-right:10em\">$row[starttime]</label>";
-//         echo"<button type=\"submit\">View Challenges</button></form>";
-//         echo"</div><br><br>";
-//        // echo "in while";
 
 
-//     }
+    require_once('header.php');
+    require_once('contest.php');
+
+    $sql="select * from contest";
+    $result=$connection1->query($sql);
+   // echo "in php";
+    while($row=mysqli_fetch_array($result)){
+
+      // echo"<br><form action=\"challenges.php\" method=\"POST\">";
+      // echo"<div id=\"rcorners2\">";
+      // echo "<ul id=b><li><a style=\"font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 16px; color: #39424e;\">PROJECTeuler</a></li>
+      //     <li id=b><a style=\"font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 16px; color: #39424e;\">Sep 28th 2019, 9:30 pm IST</a></li>
+      //     <li><a href=\"#details\">View Details</a></li>
+      //     <li style=\"float:right\"></li><button class=\"button button4\">Enter</button></li>
+      //   </ul>
+      // <div>";
+
+
+        echo"<br><form action=\"challenges.php\" method=\"POST\"><div class=\"container\" style=\"padding:10px ; width:80%; height:20% ; border:3px solid black; border-radius: 25px;\">";
+        echo"<label style=\"padding-right:30em\" >$row[contestname]</label>";
+         echo "<input type=\"hidden\" value=$row[contestname] name=\"contestname\">";
+        echo"<label style=\"padding-right:10em\">$row[starttime]</label>";
+        echo"<button style=\"background-color: #4CAF50;\">View Challenges</button></form>";
+        echo"</div><br><br>";
+       // echo "in while";
+
+
+    }
 //echo "out while";
-    ?>
+  ?> 
 
+<h1>hhhh</h1>
 
-
-
+<div date-date="<?php echo $row['starttime']?>" id="count-down"></div>
 
 
     <!-- Optional JavaScript -->

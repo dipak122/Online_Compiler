@@ -61,7 +61,7 @@ if(isset($_SESSION['un']))
         
          <!-- <link rel="stylesheet" href="css/style.css"> -->
      <!-- <link rel="stylesheet" href="css/vlab.css">  -->
-        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
     <title>Hello, world!</title>
   </head>

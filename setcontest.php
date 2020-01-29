@@ -63,7 +63,7 @@ if($result){
 
 echo '<script>alert("Your Contest Has Been added! Go To Your ")</script>';
 
-     //header("Location:addchallenges.php?contest=$contestname");
+     header("Location:addchallenges.php?contest=$contestname");
 //echo "<h1>hello3<h1>";
 
 }

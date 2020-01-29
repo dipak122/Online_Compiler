@@ -130,22 +130,65 @@ if(isset($_SESSION['un']))
       // <div>";
 
 
-        echo"<br><form action=\"challenges.php\" method=\"POST\"><div class=\"container\" style=\"padding:10px ; width:80%; height:20% ; border:3px solid black; border-radius: 25px;\">";
-        echo"<label style=\"padding-right:30em\" >$row[contestname]</label>";
+        echo"<br><form action=\"challenges.php\" method=\"POST\"><div class=\"container\" style=\"padding:10px ; width:90%; height:20% ; border:3px solid black; border-radius: 25px;\">";
+        echo"<label style=\"padding-left:30px; font-size:25px ;text-decoration:underline\" >$row[contestname]</label>";
          echo "<input type=\"hidden\" value=$row[contestname] name=\"contestname\">";
-        echo"<label style=\"padding-right:10em\">$row[starttime]</label>";
-        echo"<button style=\"background-color: #4CAF50;\">View Challenges</button></form>";
+         ?>
+         <?php $date=date_create($row['starttime']);
+         $date1=date_format($date,"Y");
+         $mydate=getdate(date('U'));
+
+         if($mydate['year'] > $date1){
+          echo "<label id=\"qw\" style=\"padding-left:20em; font-size:15px; text-align:center\">Expired</label>";
+           echo"<div style=\"float:right; padding-right:30px;\"><button style=\"background-color: blue; color:white;  border-radius:15px; border:2px solid blue\">Virtualization test</button></div></form>";
         echo"</div><br><br>";
-       // echo "in while";
-
-
+         }
+       else{  
+         echo "<label id=\"qw\" style=\"padding-left:20em; font-size:15px; text-align:center\">".date_format($date,"d/m/Y H:i:s")."</label>";
+         
+        // echo"<label style=\"padding-right:10em\">$row[starttime]</label>";
+        echo"<div style=\"float:right; padding-right:30px;\"><button style=\"background-color: #4CAF50; color:white;  border-radius:15px; border:2px solid black\">View Challenges</button></div></form>";
+        echo"</div><br><br>";
+      
+       }
     }
-//echo "out while";
-  ?> 
+    ?>
+<?php $date=date_create($row['starttime']);  ?>
+    
+<script>
 
+var countDownDate = new Date(<?php echo date_format($date,"Y/m/d H:i:s")?>).getTime();
 
+// Update the count down every 1 second
+var x = setInterval(function() {
 
+  // Get today's date and time
+  var now = new Date().getTime();
+  
 
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+  
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

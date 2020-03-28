@@ -1,3 +1,4 @@
 # Online_Compiler
+## For Windows only 
 
-## [for Windows Only](https://github.com/dipak122/Online_Compiler_in_linux)
+## [for Linux](https://github.com/dipak122/Online_Compiler_in_linux)
